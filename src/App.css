@@ -1,0 +1,40 @@
+/* Apply background image to the entire viewport */
+.bg-container {
+  background-image: url("https://au.moneyexchangerate.org/dist/img/money-exchange-rate-org.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the content within the container */
+.content {
+  max-width: 40%; /* Adjust as needed */
+  width: 100%; /* Ensure the content takes full width of the container */
+  margin: 0 auto; /* Center the content horizontally */
+  margin-left: auto; /* Shift the content to the right */
+  margin-right: 100px; /* Provide additional margin on the right */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.258
+  ); /* Semi-transparent background */
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 90%;
+    margin: 0 auto; /* Center the content horizontally */
+    margin-left: auto; /* Shift the content to the right */
+    margin-right: auto; /* Shift the content to the left */
+  }
+}
